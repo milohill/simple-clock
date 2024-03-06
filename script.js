@@ -1,4 +1,7 @@
 import dayjs from 'dayjs';
+import timezone from 'dayjs/plugin/timezone';
 
-const now = dayjs();
-console.log(now);
+dayjs.extend(timezone);
+
+// const now = dayjs();
+console.log(dayjs.tz.guess());
